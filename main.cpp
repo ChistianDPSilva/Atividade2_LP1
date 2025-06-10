@@ -65,10 +65,10 @@ int main() {
         }
 
         if(i >= 6){
-            char opcao;
+            char sn;
             std::cout << "Deseja adicionar mais funcionários? (s/n): ";
-            std::cin >> opcao;
-            if (opcao != 's' && opcao != 'S') {
+            std::cin >> sn;
+            if (sn != 's' && sn != 'S') {
                 break;
             }
         }
