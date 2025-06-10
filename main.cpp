@@ -13,7 +13,7 @@ int main() {
     float salarioBase;
 
     cout << "Cadastro de Funcionários (mínimo 6)\n";
-    for (int i = 0; i < 6; i++) {
+    for (int i = 0; i < 10; i++) {
         cout << "\nFuncionário #" << i + 1 << endl;
         cout << "1 - Desenvolvedor\n2 - Gerente\n3 - Estagiário\nEscolha o tipo: ";
         cin >> opcao;
@@ -63,6 +63,16 @@ int main() {
             cout << "Opção inválida. Tente novamente.\n";
             i--;
         }
+
+        if(i >= 6){
+            char opcao;
+            std::cout << "Deseja adicionar mais funcionários? (s/n): ";
+            std::cin >> opcao;
+            if (opcao != 's' && opcao != 'S') {
+                break;
+            }
+        }
+
     }
 
     cout << "\n===== FUNCIONÁRIOS CADASTRADOS =====\n";
